@@ -1,6 +1,6 @@
 ---
 title: ES6函数
-date: 2017-03-09 14:38:58
+date: 2017-03-09 20:38:58
 categories: ES6
 tags:
     - 学习笔记
@@ -79,3 +79,10 @@ function sortNumbers () {
 sortNumbers (...numbers) => numbers.sort();
 ```
 PS: rest参数只能是最后一个参数；函数的length属性不包括rest参数。
+
+#### 扩展运算符
+
+扩展运算符就想rest参数的逆运算，可以将一个数组分以逗号分隔开。
+```javascript
+console.log(...[1, 2, 3]) // 1 2
+```
