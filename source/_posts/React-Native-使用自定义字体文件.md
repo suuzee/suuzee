@@ -1,13 +1,18 @@
 ---
-title: React Native 使用自定义字体文件
+title: React Native 使用自定义Iconfont
 date: 2017-06-19 22:00:27
+categories: React Native
 tags:
+    - 学习笔记
+    - React
+    - Iconfont
+description: React Native 使用自定义Iconfont
 ---
 
 ## React Native 使用自定义 iconfont
 
 1. 下载字体文件
-2. `IOS` -> 将字体文件拽进`xcode`工程里，然后在`info.plist`加入`Fonts provided by application`，这是个数组，写上`fonts/iconfont.ttf`.
+2. `IOS` -> 将字体文件拽进`xcode`工程里，然后在`info.plist`加入`Fonts provided by application`，这是个数组，写上`fonts/iconfont.ttf`.<!--more-->
 3. `fontFamily: 'iconfont'` PS: 下载的文件叫什么，`fontFamily`就是什么。
 4. 因为我们的`iconfont`都是`&#xe038;`这种格式的，这不是把这些传给`Icon`组件就行了吗，但是试了之后，会转义成字符串。这可不是我们想要的。
 5. 那怎么办，不让他转义是一种方式：
