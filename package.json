@@ -2,8 +2,11 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "deploy": "node_modules/.bin/hexo clean && node_modules/.bin/hexo g && node_modules/.bin/hexo d"
+  },
   "hexo": {
-    "version": "3.3.7"
+    "version": "3.4.4"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -15,8 +18,8 @@
     "hexo-generator-search": "^1.0.4",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^0.2.0",
-    "hexo-renderer-marked": "^0.2.10",
-    "hexo-renderer-stylus": "^0.3.1",
+    "hexo-renderer-marked": "^0.2.11",
+    "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.2.0"
   },
   "devDependencies": {

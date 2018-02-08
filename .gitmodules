@@ -1,0 +1,6 @@
+[submodule "themes/themes/cover"]
+	path = themes/themes/cover
+	url = git@github.com:suuzee/hexo-themes-cover.git
+[submodule "themes/cover"]
+	path = themes/cover
+	url = git@github.com:suuzee/hexo-themes-cover.git
