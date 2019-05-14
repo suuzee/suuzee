@@ -101,3 +101,11 @@ source.cancel('Operation canceled by the user.');
 ```
 
 从上面的代码可以看出，`axios`使用的是基于`CancelToken`提出的撤销。然而，这个提案已经被撤销，详情请见[这里](https://github.com/tc39/proposal-cancelable-promises)；具体的取消方法的实现会在后面源码分析那部分进行解释。
+
+### `axios`的核心是怎么设计和实现的？
+
+通过上面的例子，我相信每个人对使用`axios`这件事上都有个基本的理解。下面，我们将通过模块分析`axios`是如何设计和实现的。在这篇文章中，我们通过下面这张与`axios`相关的图片来介绍它。如果感兴趣的话，在你读相关的代码的时候，你应该将代码`clone`下来，这会加深对模块的理解。
+
+![axios module](axios-module.png)
+
+#### HTTP请求模块
