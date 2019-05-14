@@ -71,3 +71,7 @@ deploy:
   type: git
   repository: git@github.com:suuzee/suuzee.github.io.git
   branch: master
+
+# hexo-sage-posts
+sage_posts:
+  filter: hidden
